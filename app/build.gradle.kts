@@ -41,8 +41,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_22
+        targetCompatibility = JavaVersion.VERSION_22
     }
 
     composeOptions {
@@ -52,7 +52,7 @@ android {
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
-            jvmTarget = JavaVersion.VERSION_1_8.toString()
+            jvmTarget = JavaVersion.VERSION_22.toString()
 //            useIR = true
         }
     }

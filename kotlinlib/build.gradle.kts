@@ -3,7 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     java
     id("kotlin")
-    `maven-publish`
+    id("maven-publish")
+//    `maven-publish`
 }
 
 java {

@@ -41,8 +41,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     composeOptions {
@@ -52,8 +52,8 @@ android {
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
-            jvmTarget = JavaVersion.VERSION_11.toString()
-            useIR = true
+            jvmTarget = JavaVersion.VERSION_1_8.toString()
+//            useIR = true
         }
     }
 
@@ -61,6 +61,7 @@ android {
         exclude("META-INF/AL2.0")
         exclude("META-INF/LGPL2.1")
     }
+    namespace = "com.frogobox.jitpackdsl"
 }
 
 dependencies {
